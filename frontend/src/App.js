@@ -1,16 +1,20 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 import AffiliatePage from "./pages/AffiliatePage";
-import ReportDownloadPage from "./pages/ReportDownloadPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import LandingPage from "./pages/LandingPage";
+import PricingPage from "./pages/PricingPage";
+import DownloadPage from "./pages/DownloadPage";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/affiliate" element={<AffiliatePage />} />
-        <Route path="/report-download" element={<ReportDownloadPage />} />
+        <Route path="/download" element={<DownloadPage />} />
       </Routes>
     </div>
   );
