@@ -1,0 +1,16 @@
+{
+  "events": {
+    "checkout.session.completed": {
+      "action": "Generate and send report",
+      "process": ["Identify subscription tier", "Fetch corresponding prompt", "Run Mistral", "Convert response to PDF", "Store and send PDF"]
+    },
+    "invoice.payment_succeeded": {
+      "action": "Deliver next report for renewal",
+      "process": ["Confirm active subscription", "Generate new AI report", "Send PDF"]
+    },
+    "customer.subscription.updated": {
+      "action": "Adjust report output based on tier change",
+      "process": ["Update prompt selection based on new tier"]
+    }
+  }
+}
