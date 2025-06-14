@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumCommerce - Pricing</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your AI Subscription Plan</h1>
+        <p>Unlock automated insights tailored to your business growth.</p>
+    </header>
 
+    <main>
+        <section class="pricing-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Basic Plan ($9/mo)</th>
+                        <th>Pro Plan ($29/mo)</th>
+                        <th>Enterprise Plan ($79/mo)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AI-Powered Market Trend Report</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Competitor Pricing Snapshot</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Product Demand Prediction</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>AI SWOT + Pricing Recommendations</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Real-Time Alerts & Benchmarks</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Interactive Dashboard Access</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Bonus Value Upon Subscribing</td>
+                        <td>🎁 Unknown Extra Report</td>
+                        <td>🎁 More than Basic + bonus</td>
+                        <td>🎁 More than Pro + bonus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cta">
+            <h2>Start Your AI Subscription</h2>
+            <p>All plans include a 7-day free trial. Upgrade anytime.</p>
+            <div class="checkout-buttons">
+                <button onclick="redirectToCheckout('basic')">Subscribe to Basic</button>
+                <button onclick="redirectToCheckout('pro')">Subscribe to Pro</button>
+                <button onclick="redirectToCheckout('enterprise')">Subscribe to Enterprise</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 QuantumCommerce | AI-Powered Insights</p>
+    </footer>
+
+    <script>
+        function redirectToCheckout(tier) {
+            window.location.href = "/checkout?plan=" + tier;
+        }
+    </script>
+</body>
+</html>
