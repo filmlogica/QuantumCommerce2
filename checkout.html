@@ -1,1 +1,41 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - QuantumCommerce</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Confirm Your Subscription</h1>
+        <p>Select your plan and proceed to checkout.</p>
+
+        <div class="plans">
+            <div class="plan">
+                <h2>Basic Plan</h2>
+                <p>$9/month</p>
+                <button onclick="redirectToStripe('basic')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h2>Pro Plan</h2>
+                <p>$29/month</p>
+                <button onclick="redirectToStripe('pro')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h2>Enterprise Plan</h2>
+                <p>$79/month</p>
+                <button onclick="redirectToStripe('enterprise')">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToStripe(tier) {
+            window.location.href = "/api/checkout?plan=" + tier;
+        }
+    </script>
+</body>
+</html>
