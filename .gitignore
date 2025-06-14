@@ -1,1 +1,40 @@
-1
+# Ignore environment variables (security)
+.env
+.env.example
+
+# Python dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+*.env
+
+# Node.js dependencies (if using frontend frameworks)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Render deployment artifacts
+render.yaml
+render.log
+
+# Logs & caches
+logs/
+*.log
+.cache/
+*.bak
+
+# IDE and OS-generated files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Generated PDFs
+backend/reports/*.pdf
