@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import AffiliatePage from "./pages/AffiliateSignup";
+import AffiliateSignup from "./pages/AffiliateSignup";
 import CheckoutPage from "./pages/CheckoutPage";
 import LandingPage from "./pages/LandingPage";
 import PricingPage from "./pages/PricingPage";
