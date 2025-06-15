@@ -8,4 +8,4 @@ const AffiliatePage = () => (
   </div>
 );
 
-export default AffiliatePage;
+export default AffiliateSignup;
